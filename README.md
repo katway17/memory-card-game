@@ -1,12 +1,33 @@
-# React + Vite
+# 🃏 Memory Card Game  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and fun memory card game built with React and Vite! Click on the cards to reveal them, match pairs to win, and reset the game to play again.  
 
-Currently, two official plugins are available:
+## 📌 Features  
+- Flip cards to reveal matching pairs  
+- Randomized card positions each game  
+- Tracks matched pairs  
+- Reset button to start a new game  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Technologies Used  
+- React  
+- Vite  
+- CSS  
 
-## Expanding the ESLint configuration
+## 📥 Installation & Setup  
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/katway17/memory-card-game.git
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Navigate to the project directory:
+   ```bash
+   cd memory-card-game
+
+3. Install dependencies:
+   ```bash
+   npm install
+
+4. Run the development server:
+   ```bash
+   npm run dev
+
+Open your browser and go to http://localhost:3000 to play the game.
