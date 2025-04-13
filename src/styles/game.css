@@ -1,45 +1,101 @@
 body {
-  margin: 0; 
-  padding: 0; 
-  height: 100vh; 
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
   display: flex;
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
   background-color: #fcfcfc;
+  font-family: sans-serif;
 }
 
 .game {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; 
-  height: auto; 
+  padding: 40px 20px;
   text-align: center;
 }
 
+/* Game Board */
 .board {
   display: grid;
-  grid-template-columns: repeat(4, 80px);
-  gap: 10px;
-  justify-content: center; 
-  margin-top: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 15px;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
 }
 
+/* 🃏 Card Style */
 .card {
-  width: 80px;
-  height: 80px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #333;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 2rem;
-  transition: transform 0.3s;
+  background-color: #fff;
+  transition: transform 0.3s ease;
 }
 
 .card.flipped {
   transform: rotateY(180deg);
   background-color: #f0f0f0;
 }
+
+/* Win + General Button */
+button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #16a3b6;
+  color: #aa5555;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #cfcfe4;
+}
+
+/* 🎮 Difficulty Buttons */
+.difficulty-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.difficulty-buttons button {
+  margin-top: 0;
+  padding: 8px 16px;
+  font-size: 1rem;
+  background-color: #6816b4;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.difficulty-buttons button:hover {
+  background-color: #6d4c41;
+}
+
+.difficulty-buttons button.active {
+  background-color: #d7ccc8;
+  color: #3e2723;
+  font-weight: bold;
+}
+
+
+
 
 
