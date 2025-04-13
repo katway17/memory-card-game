@@ -6,9 +6,10 @@ A simple and fun memory card game built with React and Vite! Click on the cards 
 https://memory-card-game-three-omega.vercel.app/
 
 ## 📌 Features  
-- Flip cards to reveal matching pairs  
-- Randomized card positions each game  
-- Tracks matched pairs  
+- Flip cards to reveal matching pairs
+- Multiple difficulty levels 
+- Shuffled card positions each round 
+- "You Win!" message when all pairs are matched  
 - Reset button to start a new game  
 
 ## 🛠️ Technologies Used  
